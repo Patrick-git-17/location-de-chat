@@ -129,14 +129,34 @@
 
       }
       .pat {
-        background-image: url("ludemeula-fernandes-9UUoGaaHtNE-unsplash.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 100vh; /* Adjust as needed */
-        display: flex;
-        align-items: center;
-        justify-content: center; /* Center content horizontally */
-      }
+  background-image: url("ludemeula-fernandes-9UUoGaaHtNE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .pat {
+    min-height: 80vh;
+    background-position: top;
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
       .hero-content {
         position: relative;
         z-index: 1;
