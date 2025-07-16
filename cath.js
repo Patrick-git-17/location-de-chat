@@ -380,3 +380,6 @@
           .querySelector('.payment-method[data-method="card"]')
           .click(); // Programmatically click to set required attributes
       });
+      function toggleMobileMenu() {
+  document.querySelector('.nav-links').classList.toggle('active');
+}
