@@ -8,10 +8,6 @@
     <title>FelinLocation - Location de Chats de Compagnie</title>
 <link rel="stylesheet" href="cath.css">
 <script src="cath.js"></script>
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com">
-    
 </head>
   <body>
     <div class="overlay" id="overlay"></div>
@@ -331,6 +327,26 @@
           </div>
         </div>
       </section>
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Contactez-nous</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Nom *</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Envoyer</button>
+    </form>
+  </div>
+</section>
 
       <footer>
         <div class="container">
@@ -573,7 +589,7 @@
             <button
               class="btn-secondary"
               onclick="showHomePage()"
-              style="width: 100%; margin-top: 1rem"
+              style="width: 100%; margin-top: 1rem; background-color:rgb(167, 167, 37);"
             >
               Retour à l'accueil
             </button>
