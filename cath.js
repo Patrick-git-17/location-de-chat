@@ -1,5 +1,4 @@
-<script>
-      // Cart functionality
+// Cart functionality
       let cart = [];
       let quantities = {
         minou: 1,
@@ -381,4 +380,3 @@
           .querySelector('.payment-method[data-method="card"]')
           .click(); // Programmatically click to set required attributes
       });
-    </script>
